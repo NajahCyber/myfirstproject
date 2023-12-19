@@ -8,26 +8,27 @@
 <body>
   <header>
     <h1>Task Management</h1>
-    <input type="text" id="searchInput" placeholder="Search...">
+    <input type="text" id="taskNameInput" placeholder="Task Name (Max 20 chars)">
+    <input type="text" id="taskDescriptionInput" placeholder="Task Description">
+    <button onclick="addTask()">Add Task</button>
   </header>
   <main>
     <section class="tasks" id="todo">
       <h2>To Do</h2>
       <ul id="todoList" class="task-list"></ul>
+      <p class="no-task-msg" style="display: none;">No tasks here</p>
     </section>
     <section class="tasks" id="inProgress">
       <h2>In Progress</h2>
       <ul id="inProgressList" class="task-list"></ul>
+      <p class="no-task-msg" style="display: none;">No tasks here</p>
     </section>
     <section class="tasks" id="completed">
       <h2>Completed</h2>
       <ul id="completedList" class="task-list"></ul>
+      <p class="no-task-msg" style="display: none;">No tasks here</p>
     </section>
   </main>
-  <footer>
-    <input type="text" id="taskInput" placeholder="Add new task...">
-    <button onclick="addTask()">Add Task</button>
-  </footer>
   <script src="script.js"></script>
 </body>
 </html>
